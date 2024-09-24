@@ -8,8 +8,6 @@ load_dotenv()
 
 app = FastAPI()
 
-DL_WEBSITE_DOMAIN = os.environ.get("DL_WEBSITE_DOMAIN")
-FS_WEBSITE_DOMAIN = [x.strip() for x in os.environ.get("FS_WEBSITE_DOMAIN").split()]
 PORT = int(os.environ.get("PORT", 80))
 
 
